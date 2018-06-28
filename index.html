@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <!-- I need to link my two css files from my assets folder -->
+    <!-- I think the reset needs to go first? -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- main div for the whole page -->
+    <div id "main-content">
+
+        <!-- div for title display -->
+        <div id="title">
+            <h1>HANGMAN!</h1>
+            <h1>Catagory: Cat Breeds</h1>
+        </div>
+
+        <!-- div for instructions "press any key to start" -->
+        <div id="instruction">
+            <pre><p> <span class="blinking">Press any key to start</span></p></pre>
+        </div>
+
+        <!-- div for alerts like game over or you win -->
+        <div id="alerts">
+            <!-- need to find how to display alert -->
+            <pre><p>!</p></pre>
+        </div>
+
+        <!-- div for main game area -->
+        <div id="game-div" class="panel">
+            <!-- place to display words and letters -->
+            <div id="word-display">
+                <p id="word-display-letters"></p>
+            </div>
+
+            <!-- this should be the game display showing guessed letters
+                 and a stat section showing incorrect letters, wins, and
+                  losses -->
+            <div id="general-display">
+                <p>Guessed letters</p>
+                <!-- something to display the guessed letters -->
+                <p> <span id="guessed-letters"></span> |</p>
+                <p>Stats</p>
+                <!-- to display incorrect letters -->
+                <p> Incorrect Letters: <span id="error-count"></span></p></>
+                <!-- to display wins -->
+                <p> Wins: <span id="win-count"></span></p>
+                <!-- to display losses -->
+                <p> Losses: <span id="loss-count"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- link to js file -->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>
